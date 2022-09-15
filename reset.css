@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* font-size: 62.5%; */
+}
+
+*:hover {
+    text-decoration: none!important;
+}
+
+footer, header {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 111em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+html, body, .jumbotron.page-wrapper {
+    height: 100%;
+    position: relative;
+}
+
+
+@media(max-width: 768px) {
+    html, body, main {
+        height: unset;
+    }
+}
