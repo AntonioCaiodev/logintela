@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="login.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="font.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="header.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="footer.css" media="screen"/>
+   
+   
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.typekit.net/fvt2per.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="shortcut icon"  href="./assets/icons/favicon.ico">
+    
+    <title>Login</title>
+
+
+</head>
+<body>
+
+<header class="header">
+    <div class="header__wrapper wrapper">
+        <div class="row justify-content-center header__brand">
+            <img id="brand-logo" src="https://i.postimg.cc/TwDGMkL8/1656456785555.jpg" alt="AIA logo">
+        </div>
+        <p class="header__text">Ainda não tem acesso? Estude agora mesmo com a gente!</p>
+        <a href="https://4linux.com.br/cursos/treinamentos/" target="_blank" class="header__btn">matricule-se</a>
+    </div>
+</header>
+
+    <main class="jumbotron page-wrapper" >
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="/login/index.php" method="POST">
+                        <div class="card mx-auto login-box col-xs-12 col-md-8 col-sm-12">
+                            <div class="card-body p-0">
+                                <div class="container-fluid">
+                                    <div class="row" id="loginError">
+                                        <div class="col-12 text-center">
+                                            <p class="text-danger mb-0">Usuário ou senha inválidos</p>
+                                        </div>
+                                    </div>
+                                    <div class="row user">
+                                        <div class="px-0 col-12">
+                                            <div class="form-group">
+                                                <div class="input-group mb-2 user">
+                                                    <div class="input-group-prepend">
+                                                      <div class="input-group-text">
+                                                            <img src="https://aia.4linux.com.br/login/4linux/login/assets/icons/user-shape.svg" alt="Campo do nome de usuario">
+                                                      </div>
+                                                    </div>
+                                                    <input placeholder="Identificação do usuário" type="text" class="form-control" id="username" name="username">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-12 px-0">
+                                            <div class="form-group">
+                                                <div class="input-group mb-2 password">
+                                                    <div class="input-group-prepend">
+                                                      <div class="input-group-text">
+                                                            <img src="https://aia.4linux.com.br/login/4linux/login/assets/icons/padlock.svg" alt="Campo de senha">
+                                                      </div>
+                                                    </div>
+                                                    <input placeholder="Senha" type="password" class="form-control" id="password" name="password">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text pl-0 pr-2">
+                                                              <img src="https://aia.4linux.com.br/login/4linux/login/assets/icons/Trailing%20icon.svg" class='w-100 c-pointer' onclick="togglePasswordType()" alt="Exibir senha">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0 text-left pt-1 pb-3 mb-3">
+                                            <a href="/login/forgot_password.php" class="fln-forgot-password-link">Esqueceu a senha?</a>
+                                        </div>
+                                    </div>
+                                    <div class="row button">
+                                        <div class="col-12  px-0">
+                                            <input type="hidden" name="logintoken" value="TWGRd2OBPDiJKe7Z8KQXKYgL6v1uRROR">
+                                            <button type="submit" style="height: 65px" class="fln-primary-button"><b>ACESSAR</b></button>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4 pl-2 info-cookies">
+                                        <div class="info-icon p-0">
+                                            <img src="./assets/icons/info-image.svg" alt="Campo do nome de usuario">
+                                        </div>
+
+                                        <div class="info-text pt-1 pl-0">
+                                            <p>O uso de cookies deve ser permitido no navegador</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class=" footer">
+    <div class="footer__wrapper wrapper">
+        <figure class="footer__logo">
+            <img id="footer__logo__img" src="https://i.postimg.cc/hGChP3tf/download.png" alt="4Linux Logo Footer">
+        </figure>
+
+        <nav class="footer__nav--container">
+            <span class="footer__text">Links Úteis</span>
+            <a href="https://4linux.com.br/cursos/quem-somos/" class="footer__nav--link">sobre a Digital College</a>
+            <a href="https://jobs.rankdone.com/4linux/" class="footer__nav--link">trabalhe conosco</a>
+            <a href="https://4linux.com.br/cursos/contato/" class="footer__nav--link">entre em contato</a>
+            <a href="https://4linux.com.br/politica-de-privacidade/1-1/" class="footer__nav--link">política de privacidade</a>
+        </nav>
+
+        <nav class="footer__social">
+            <p class="footer__text">siga-nos nas redes sociais</p>
+            <a href="https://www.facebook.com/4linux" target="_blank" class="footer__social--link">
+                <img src="https://aia.4linux.com.br/login/4linux/login/assets/icons/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="https://www.instagram.com/4linux" target="_blank" class="footer__social--link">
+                <img src="https://aia.4linux.com.br/login/4linux/login/assets/icons/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="https://twitter.com/4linux" target="_blank" class="footer__social--link">
+                <img src="https://aia.4linux.com.br/login/4linux/login/assets/icons/twitter.png" alt="Twitter">
+            </a>
+
+            <a href="https://www.linkedin.com/company/4linux" target="_blank" class="footer__social--link">
+                <img src="https://aia.4linux.com.br/login/4linux/login/assets/icons/linkedin.png" alt="Linkedin">
+            </a>
+
+            <a href="https://www.youtube.com/user/4linuxmultimidia" target="_blank" class="footer__social--link">
+                <img src="https://aia.4linux.com.br/login/4linux/login/assets/icons/youtube.png" alt="youtube">
+            </a>
+
+            <a href="http://blog.4linux.com.br/" target="_blank" class="footer__social--link">
+                <img src="https://aia.4linux.com.br/login/4linux/login/assets/icons/wordpress.png" alt="Wordpress">
+            </a>
+
+        </nav>
+
+        <div class="footer__download">
+            <p class="footer__text">baixe o nosso app</p>
+            <a href="https://apps.apple.com/tt/app/4linux/id1597913296" target="_blank" class="footer__donwload--link">
+                <img src="https://aia.4linux.com.br/login/4linux/login/assets/images/appstore.png" alt="App Store">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.app4linux" target="_blank" class="footer__donwload--link">
+                <img src="https://aia.4linux.com.br/login/4linux/login/assets/images/googleplay.png" alt="Google Play">
+            </a>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script>
+        $('#loginError').hide();
+
+        let urlParams = new URLSearchParams(window.location.search);
+
+        let errorCode = urlParams.get('errorcode');
+
+        if (errorCode == 3) {
+            $('#loginError').show();
+        }
+
+    </script>
+
+    <script>
+        function togglePasswordType() {
+            const field = $("#password");
+
+            if (field.attr('type') === 'text') {
+                field.attr('type', 'password');
+            } else {
+                field.attr('type', 'text');
+            }
+        }
+    </script>
+</body>
+</html>
