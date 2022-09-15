@@ -1,0 +1,258 @@
+body {
+    background-image: url('../../images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-family: acumin-pro, 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-size: cover;
+}
+
+.jumbotron {
+    margin: 0!important;
+}
+
+/* Field*/
+.form-group {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+}
+
+.input-group-prepend {
+    display: flex;
+    justify-content: flex-end;
+    width: 60px;
+}
+
+.input-group {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+input.form-control {
+    border: 0;
+    height: 60px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+input.form-control:focus {
+    border-color: unset;
+    box-shadow: unset;
+    background-color: transparent;
+}
+
+.input-group-text {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.input-group-text img {
+    width: 1rem;
+}
+
+p, h1, h2, h3, h4, h5, h6, a, button, span {
+    font-family: acumin-pro, 'Roboto', sans-serif;
+}
+
+/* Buttons and Links */
+.c-pointer {
+    cursor: pointer;
+}
+
+.fln-primary-button {
+    background: #93056f;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 0;
+    display: block;
+    width: 100%;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 5px;
+}
+
+.fln-forgot-password-link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ECFDFD;
+}
+
+.fln-forgot-password-link:hover {
+    color: #93056f;
+}
+
+/* Login page */
+.page-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: unset;
+    padding: 7.68rem 0;
+}
+
+.login-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 64px 48px;
+    height: 454px;
+    width: 541px;
+}
+
+.login-box footer.card-footer {
+    border-top: 0;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    background-color: #E5E5E5;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.login-box footer.card-footer nav.social-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-box footer.card-footer nav.social-menu a.social-item {
+    width: 18px;
+    height: 18px;
+}
+
+.login-box footer.card-footer nav.social-menu a.social-item img {
+    display: block;
+    height: 100%;
+}
+
+.login-box footer.card-footer nav.social-menu a.social-item:hover {
+    transform: scale(1.1);
+}
+
+#loginError {
+    display: none;
+}
+
+/**
+    Info cookies
+ */
+.info-cookies .info-icon {
+    margin-right: 15px;
+}
+
+.info-cookies .info-text p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+main.jumbotron.page-wrapper .container {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 35%);
+}
+
+@media(max-width: 1366px) {
+    .login-box {
+        height: 20rem;
+        width: 100%;
+        max-width: 31.4375rem;
+        padding: 1.5rem 1rem!important;
+    }
+
+    input.form-control {
+        height: 3rem;
+    }
+
+    .page-wrapper {
+        padding: 2.875rem 0;
+    }
+
+    .fln-primary-button {
+        height: 50px!important;
+        margin: 0;
+    }
+
+    .col-12.px-0.text-left.pt-1.pb-3.mb-3 {
+        margin: 0!important;
+    }
+
+}
+
+@media(max-width: 768px) {
+    main.jumbotron.page-wrapper .container {
+        position: static;
+        bottom: unset;
+        right: unset;
+        transform: unset;
+    }
+}
+
+@media(max-width: 600px) {
+    .jumbotron.page-wrapper {
+        padding: 3rem 0;
+    }
+}
+
+@media(max-width: 475px) {
+    .login-box {
+        height: unset;
+        padding: 64px 18px!important;
+    }
+
+    .info-text {
+        padding: 0px!important;
+    }
+
+    .info-cookies {
+        flex-wrap: nowrap;
+        padding: 32px 0 0!important;
+        margin: 0!important;
+    }
+
+    .info-cookies .info-text p {
+        margin-bottom: 0!important;
+    }
+
+    .card-body {
+        flex: none;
+    }
+
+    .card-body .container-fluid {
+        padding: 0!important;
+    }
+
+    .card-body .container-fluid .row.mt-3 {
+        margin: 0!important;
+    }
+
+    .card-body .container-fluid .password {
+        margin-bottom: 16px!important;
+    }
+
+    .col-12.px-0.text-left.pt-1.pb-3.mb-3 {
+        padding: 0 0 32px!important;
+        margin: 0px!important;
+    }
+
+    .button {
+        max-width: 407px!important;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .fln-primary-button {
+        margin: 0!important;
+    }
+
+    .card-body .container-fluid .row.user {
+        max-width: 407px;
+        width: 100%;
+        margin: 0px auto 32px!important;
+    }
+    
+}
